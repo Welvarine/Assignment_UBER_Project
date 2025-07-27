@@ -185,15 +185,12 @@ These were the refinements of the datasets used final dataset was imported into 
 
 ---
 #### Link to the THE POWER-BI Dashboard
-*Loaded data to the Power-BI report generation
+*Loaded data into the Power BI report generation
 
 <img width="347" height="579" alt="Loaded_data" src="https://github.com/user-attachments/assets/be24356e-5795-40da-96cd-043a57c4264c" />
 
-* Using Different values to create the interactive dashboard below
-   
-
-It contains slicing features to see how the different graphs affect each other
-[https://drive.google.com/drive/recent?dmr=1&ec=wgc-drive-globalnav-goto](https://drive.google.com/)
+* Using Different values to create the interactive dashboard below.It contains slicing features to see how the different graphs affect each other
+*[https://drive.google.com/drive/recent?dmr=1&ec=wgc-drive-globalnav-goto](https://drive.google.com/)
 
 
 ---
