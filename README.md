@@ -17,7 +17,10 @@ This project investigates Uber ride data to extract meaningful trends and patter
 The methodology followed a structured data pipeline:
 
 * **Data Collection:** The dataset was downloaded from Kaggle and loaded using Pandas.
-* **Data Cleaning:** Missing values and outliers were detected and handled using descriptive statistics and IQR methods.
+* **Data Cleaning:** The removal of  missing values and duplicates
+* 
+###
+###
 * **Feature Engineering:** We extracted time-based variables (hour, day, month, day\_of\_week) and created new flags (`is_weekend`, `is_peak_hour`).
 * **Distance Calculation:** Used the Haversine formula to compute trip distance in kilometers.
 * **Exploratory Data Analysis (EDA):** Statistical summaries, correlations, and plots were used to explore data relationships.
