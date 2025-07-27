@@ -8,7 +8,9 @@ This analytical report presents findings from the Uber Fares Dataset using Pytho
 
 ### 📘 Introduction
 
-This project analyses Uber ride data to identify meaningful trends and patterns related to fare pricing and ride behaviour. The key goal was to gain operational insights using Python for data analysis and Power BI for interactive dashboard development. The dataset was obtained from Kaggle and included pickup/dropoff coordinates, timestamps, passenger count, and fare amounts.
+This project analyses Uber rides' data to identify meaningful trends and patterns related to fare-pricing, distance, time and ride behaviour.
+The key goal was to know the correlation of these factors  using Python for data analysis and Power BI for interactive dashboard development.
+The dataset was obtained from Kaggle and included pickup/dropoff coordinates, timestamps, passenger count, and fare amounts.
 
 ---
 
@@ -60,10 +62,10 @@ summary.to_csv("uber_fare_boxplot_summary.csv",index=False)
 
 Used `.describe()`, `.median()`, `.mode()` to understand fare distribution:
 
-* Mean: \$11.36
-* Median: \$8.50
-* Mode: \$6.50
-* Max: \$499 (outlier)
+* Mean
+* Median
+* Mode
+* Outliers
 
 #### ⚠️ Outlier Detection
 
@@ -154,7 +156,6 @@ summary.to_csv("uber_fare_boxplot_summary.csv",index=False)
 
 <img width="605" height="394" alt="blox plot" src="https://github.com/user-attachments/assets/61181882-8017-4c46-b744-93f454dabfb2" />
 
-
 ### 📈 Results: Discoveries and Patterns
 
 * Fare amount is **strongly correlated** with trip distance (r ≈ 0.83).
@@ -164,22 +165,6 @@ summary.to_csv("uber_fare_boxplot_summary.csv",index=False)
 
 ---
 
-### 📋 Conclusion
-
-The data showed clear fare trends based on time and trip distance. 
-Most Uber fares fall between \$5 and \$20, with peak demand during commute hours and weekends.
-The analysis confirmed that fare is directly influenced by the distance(especially not long distances), time of day, and day of the week.
-
----
-### 💡 Recommendations
-
-Based on the analysis:
-
-1. **Increase driver availability** during peak periods to reduce wait time and optimise pricing.
-2. **Target promotions during off-peak hours** to balance ride volume.
-3. **Flag and investigate outlier rides** if possible to maintain data integrity.
-
----
 
 ### 📂 Datasets Export used
 *Final enhanced (Currently in use)
@@ -199,9 +184,79 @@ summary.to_csv("uber_fare_boxplot_summary.csv",index=False)
 These were the refinements of the datasets used final dataset was imported into Power BI for dashboard development.
 
 ---
+#### Link to the THE POWER-BI Dashboard
+*Loaded data to the Power-BI report generation
+
+<img width="347" height="579" alt="Loaded_data" src="https://github.com/user-attachments/assets/be24356e-5795-40da-96cd-043a57c4264c" />
+
+* Using Different values to create the interactive dashboard below
+   
+
+It contains slicing features to see how the different graphs affect each other
 [https://drive.google.com/drive/recent?dmr=1&ec=wgc-drive-globalnav-goto](https://drive.google.com/)
 
-C:\Users\USER\Documents\Intro_to_Big_Data_Analytics_-_Python_Code[1]\Intro to Big Data Analytics - Python Code\Assignment_I.ipynb
 
-The structured process of statistical and visual analysis provided actionable insights into ride dynamics and pricing behaviour within Uber's service model.
+---
+
+### 📋 Conclusion
+
+The data showed clear fare trends based on time and trip distance. 
+Most Uber fares fall between \$5 and \$20, with peak demand during commute hours and weekends.
+The analysis confirmed that fare is directly influenced by the distance(especially not long distances), time of day, and day of the week.
+
+---
+### 💡 Recommendations
+
+Based on the analysis:
+
+1. **Increase driver availability** during peak periods to reduce wait time and optimise pricing.
+2. **Target promotions during off-peak hours** to balance ride volume.
+3. **Flag and investigate outlier rides** if possible to maintain data integrity.
+
+
+
+## 📚 References
+
+This document lists the references used in the Uber Fares Dataset Analysis project.
+
+---
+
+### 📁 Dataset Source
+
+- **Title:** Uber Fares Dataset  
+- **Source:** Kaggle  
+- **Link:** [https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city](https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city)  
+- **Publisher:** FiveThirtyEight  
+- **Access Date:** July 2025  
+- **License:** Public Domain (CC0)
+
+---
+
+### 🧪 Tools Used
+
+- **Power BI Desktop** – Microsoft Corporation  
+- **Python Libraries:**
+  - `pandas` – Data manipulation
+  - `numpy` – Numerical computations
+  - `seaborn` / `matplotlib` – Data visualization
+  - `datetime` – Time formatting and extraction
+
+---
+
+### 📑 External Resources & Methodologies
+
+- **Outlier Detection (IQR Method)**  
+  Source: [Towards Data Science – Outlier Removal](https://towardsdatascience.com/why-and-how-to-remove-outliers-from-your-data-using-python-1c2bcea5dcea)
+
+- **Distance Estimation (Haversine Formula)**  
+  Source: [Movable Type Scripts](https://www.movable-type.co.uk/scripts/latlong.html)
+
+- **Seaborn Correlation Heatmap**  
+  Source: [Seaborn Documentation](https://seaborn.pydata.org/generated/seaborn.heatmap.html)
+
+---
+
+### 📘 Academic Citation (IEEE Format)
+
+[1] FiveThirtyEight, “Uber Pickups in New York City,” *Kaggle*. [Online]. Available: https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city. [Accessed: July 2025].
 
